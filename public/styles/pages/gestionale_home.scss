@@ -1,0 +1,40 @@
+#page-home {
+  .project_toolbar {
+      .md-button {
+          color: $color-secondary;
+          font-weight: bold;
+
+          md-icon {
+              fill: $color-secondary;
+          }
+      }
+  }
+
+
+    md-whiteframe {
+        margin-bottom:25px;
+
+        &.quick-info {
+            height: 100px;
+
+            .value {
+                font-size: 55px;
+            }
+
+            .separator {
+                border: 1px solid $color-primary;
+                width: 15%;
+            }
+
+            .label {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .ts-vai-a-pagina {
+        font-size: 14px;
+        max-width: 80px;
+        padding: 0;
+    }
+}

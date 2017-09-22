@@ -1,0 +1,36 @@
+{
+  "name": "tornosubito-gestionale-front",
+  "description": "Gestionale WebApp",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "lucaprovini1989@gmail.com"
+  ],
+  "license": "private",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "",
+    "angular-route": "",
+    "angular-material": "",
+    "material-design-icons": "",
+    "ngstorage": "",
+    "angular-base64": "",
+    "angular-filter": "",
+    "angular-file-upload": "",
+    "angular-chart.js": "",
+    "jquery": "",
+    "jqvmap": "",
+    "Chart.HorizontalBar.js": "chart.horizontalbar#"
+  },
+  "resolutions": {
+    "angular": "1.x"
+  }
+}

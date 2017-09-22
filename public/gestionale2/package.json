@@ -1,0 +1,19 @@
+{
+  "name": "gestionale",
+  "version": "0.1.0",
+  "description": "-",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-watch": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-uglify": "",
+    "grunt-html2js": "",
+    "grunt-contrib-htmlmin": ""
+  }
+}

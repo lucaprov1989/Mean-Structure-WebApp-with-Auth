@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it" ng-app="GestionaleLogin">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gestionale</title>
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/app.css">
+</head>
+
+<body ng-controller='TopToolBarCtrl'>
+    <div class="netstatus-overlay" ng-show="NET_STATUS_ON"></div>
+    <div class="netstatus-overlay-spinner" ng-show="NET_STATUS_ON">
+        <md-progress-linear md-mode="indeterminate"></md-progress-linear>
+    </div>
+    <md-toolbar class='main-toolbar' layout="row">
+        <div style="width:100%">
+            <div ng-if='isLogin()' class='logged-user'>
+                Sei collegato come Luca Provini | <a ng-click='logout()'>Esci</a>
+            </div>
+        </div>
+    </md-toolbar>
+    <div ng-show="loaded" style='text-align:center;color:#01253d'>
+        <h2>Caricamento in corso</h2>
+    </div>
+    <div ng-view></div>
+    <script type="text/javascript" src="/gestionale2/components.js"></script>
+    <script type="text/javascript" src="/gestionale2/templates.js"></script>
+    <script type="text/javascript" src="/gestionale2/app.js"></script>
+</body>
+
+</html>

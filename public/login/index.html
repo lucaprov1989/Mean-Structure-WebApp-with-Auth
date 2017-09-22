@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it" ng-app="GestionaleLogin">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gestionale</title>
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/app.css">
+</head>
+
+<body ng-controller='TopToolBarCtrl'>
+    <div class="netstatus-overlay" ng-show="NET_STATUS_ON"></div>
+    <div class="netstatus-overlay-spinner" ng-show="NET_STATUS_ON">
+        <md-progress-linear md-mode="indeterminate"></md-progress-linear>
+    </div>
+    <md-toolbar class='main-toolbar' layout="row">
+
+    </md-toolbar>
+    <div ng-view></div>
+    <script type="text/javascript" src="components.js?1"></script>
+    <script type="text/javascript" src="templates.js?1"></script>
+    <script type="text/javascript" src="app.js?1"></script>
+</body>
+
+</html>

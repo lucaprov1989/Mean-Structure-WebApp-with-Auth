@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it" ng-app="Gestionale">
+
+<head>
+    <meta charset="utf-8">
+    <title>TornoSubito</title>
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/app.css">
+</head>
+
+<body ng-controller='TopToolBarCtrl'>
+    <div class="netstatus-overlay" ng-show="NET_STATUS_ON"></div>
+    <div class="netstatus-overlay-spinner" ng-show="NET_STATUS_ON">
+        <md-progress-linear md-mode="indeterminate"></md-progress-linear>
+    </div>
+    <md-toolbar class='main-toolbar' layout="row">
+        <img src='/img/logobar.png' class='logobar' />
+        <div style="width:100%">
+
+            <img src='/img/logobar_right.png' class='logobar_right' />
+
+            <div ng-if='isLogin()' class='logged-user'>
+                Sei collegato come Luca Provini | <a ng-click='logout()'>Esci</a>
+            </div>
+        </div>
+    </md-toolbar>
+    <md-toolbar class='menu-toolbar' ng-if="isLogin()">
+        <md-menu-bar>
+            <md-button ng-click="goTo('/')">Gestione Progetto</md-button>
+        </md-menu-bar>
+    </md-toolbar>
+    <div ng-view></div>
+
+    <script type="text/javascript" src="components.js?1"></script>
+    <script type="text/javascript" src="templates.js?1"></script>
+    <script type="text/javascript" src="app.js?1"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+
+
+
+
+#page-compila {
+  @media all and (-ms-high-contrast:none)
+       {
+       .ie-margin { margin-top: 3em  } /* IE10 */
+       *::-ms-backdrop, .ie-margin  { margin-top: 3em } /* IE11 */
+       .ie-double-margin { margin-top: 2em ; margin-bottom: 2em  } /* IE10 */
+       *::-ms-backdrop, .ie-double-margin {margin-top: 2em ; margin-bottom: 2em } /* IE11 */
+       }
+       md-input-container .md-input {
+    -ms-flex-preferred-size: auto !important;
+
+}
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{
+  .ie-margin { margin-top: 3em  }
+
+  .ie-double-margin { margin-top: 2em ; margin-bottom: 2em  }
+
+}
+md-input-container.md-input-invalid >label {
+  color: red !important;
+}
+    md-whiteframe {
+        .formulario-section md-icon {
+            width:100%;
+            height:96px;
+        }
+    }
+
+    .ts-public-info {
+
+        form, md-content {
+            width:100%;
+        }
+    }
+
+    md-input-container {
+        padding: 1px 1px 5px;
+
+        #page-user .login-box .login-form md-input-container .md-input, #page-user .login-box .login-form md-input-container.md-default-theme, .ts-content md-input-container .md-placeholder, .ts-content md-input-container label, .ts-content md-input-container.md-default-theme, .ts-content md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid), .ts-content md-input-container.md-default-theme.md-input-has-value:not(.md-input-invalid), .ts-content md-input-container.md-input-focused:not(.md-input-invalid) label, .ts-content md-input-container.md-input-has-value:not(.md-input-invalid) label {
+            font-size: 13px;
+        }
+
+        .md-input {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        & .md-input[disabled] {
+            color: $color-primary;
+        }
+
+        md-select.md-default-theme, md-select .md-select-value.md-select-placeholder {
+            font-size: 13px;
+            color: $color-primary;
+        }
+
+        md-select.md-default-theme[disabled], md-select[disabled] .md-select-value {
+            font-size: 13px;
+            color: $color-primary;
+        }
+    }
+
+    .md-switch-thumb, md-radio-button {
+        margin-bottom: 0;
+        margin-top:0;
+        font-size: 14px;
+    }
+
+    .md-subheader .md-subheader-inner {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 16px 0;
+    }
+
+    .md-subheader {
+        margin: 16px 16px -16px 0;
+    }
+
+    md-checkbox {
+        font-size: 14px;
+        margin: 4px;
+    }
+
+    .md-small {
+        font-size: 11px;
+        line-height: 18px;
+        min-height: 20px;
+        min-width: 44px;
+    }
+
+    md-datepicker {
+        .md-datepicker-button {
+            float:left;
+        }
+
+        .md-datepicker-input-container {
+            float: left;
+            padding-bottom: 0;
+            padding-top: 18px;
+            vertical-align: middle;
+            width: 85%;
+
+            .md-datepicker-input {
+                max-width:100%;
+                width:100%;
+            }
+        }
+    }
+
+    md-autocomplete {
+        min-width:100px;
+    }
+
+    .md-datepicker-calendar-pane.md-pane-open {
+        background-color: #FFF;
+    }
+
+    .delete_esperienza_facoltativa {
+        cursor: pointer;
+        float: right;
+        font-weight: normal;
+    }
+
+    .ts-table{
+        width:100%;
+    }
+
+    .input-file-controller {
+        input{
+            height: 42px;
+            width: 100%;
+            -ms-flex-preferred-size: auto !important;
+        }
+        button {
+            width:250px;
+        }
+    }
+
+    md-content {
+        overflow: hidden;
+    }
+
+    .project_toolbar {
+        button {
+            margin:0;
+        }
+    }
+
+    .md-header-curriculum{
+        .md-subheader-inner{
+            line-height:48px;
+        }
+
+        button {
+            float:right;
+        }
+    }
+
+    section {
+        .curriculum-section-label {
+            display:block;
+            line-height: 48px;
+            font-weight:bold;
+        }
+        button {
+            float:right;
+        }
+    }
+
+    md-input-container:not(.md-input-has-value) input:not(:focus), md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field {
+        color: #000;
+    }
+
+    .md-warn {
+        float:right;
+    }
+}

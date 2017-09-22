@@ -1,0 +1,29 @@
+{
+	"name" : "gestionale-front",
+	"description" : "Gestionale WebApp",
+	"main" : "index.html",
+	"moduleType" : [],
+	"authors" : [
+		"lucaprovini1989@gmail.com"
+	],
+	"license" : "private",
+	"homepage" : "",
+	"private" : true,
+	"ignore" : [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies" : {
+		"angular" : "",
+		"angular-route" : "",
+		"angular-material" : "",
+		"ngstorage" : "",
+		"angular-base64" : "",
+		"angular-filter" : "",
+		"angular-sanitize" : "",
+		"angular-file-upload" : ""
+	}
+}

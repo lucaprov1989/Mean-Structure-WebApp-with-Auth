@@ -1,0 +1,161 @@
+#dialog-nuova-richiesta {
+ div > md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item > span {
+        color: #e73761;
+  }
+
+  #subtab md-tabs-wrapper md-tabs-canvas md-pagination-wrapper {
+         width: 99999px !important;
+   }
+
+   #subtab md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item span {
+          color: #8C8C8C !important;
+    }
+
+    .md-subheader.md-default-theme, .md-subheader {
+    color: #01253d;
+    font-size: 15px;
+    font-weight: 700;
+
+  }
+
+  #content {
+    overflow: inherit;
+  }
+
+  .paddingbottom {
+    padding-bottom: 50px;
+  }
+
+    min-width: 80%;
+    stato-richiesta {
+        .md-button {
+            min-height: 18;
+            min-width: 44px;
+        }
+    }
+
+    .ts-table {
+        th {
+            font-weight: 600;
+            font-size: 16px;
+            border-right: 1px solid rgba(0,0,0,0.24);
+            border-bottom: 1px solid rgba(0,0,0,0.24);
+        }
+
+        td {
+            text-align: center;
+            font-size: 16px;
+            border-right: 1px solid rgba(0,0,0,0.24);
+            border-bottom: 1px solid rgba(0,0,0,0.24);
+        }
+
+        tr.alternate {
+            background-color: #DDDDDD;
+        }
+    }
+
+    .badge {
+        font-size: smaller;
+        padding: 4px;
+        border-radius: 5px;
+        color: #FFF;
+        margin-right: 5px;
+        display: inline-block;
+
+        &.md-danger {
+            background-color: #d9534f;
+            border-color: #d43f3a;
+        }
+
+        &.md-warning {
+            background-color: #f0ad4e;
+            border-color: #eea236;
+        }
+
+        &.md-success {
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+        }
+
+        &.md-primary {
+            background-color: #337ab7;
+            border-color: #2e6da4;
+        }
+    }
+
+
+    md-toolbar {
+        background: $color-primary;
+        min-height: 48px;
+
+        .md-toolbar-tools {
+            height: 48px;
+            max-height: 48px;
+        }
+    }
+
+    md-dialog-content {
+        md-input-container {
+            padding: 1px 1px 5px;
+
+            .md-placeholder,
+            label,
+            &.md-default-theme,
+            &.md-default-theme.md-input-focused:not(.md-input-invalid),
+            &.md-default-theme.md-input-has-value:not(.md-input-invalid),
+            &.md-input-focused:not(.md-input-invalid) label,
+            &.md-input-has-value:not(.md-input-invalid) label {
+                font-size: 13px;
+                color: $color-primary;
+            }
+
+            md-select.md-default-theme, md-select .md-select-value.md-select-placeholder {
+                font-size: 13px;
+                color: $color-primary;
+            }
+
+            md-select.md-default-theme[disabled], md-select[disabled] .md-select-value {
+                font-size: 13px;
+                color: $color-primary;
+            }
+
+            .md-input {
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            & .md-input, & .md-input[disabled] {
+                color: $color-primary;
+            }
+
+            md-datepicker {
+                .md-datepicker-button {
+                    float:left;
+                }
+
+                .md-datepicker-input-container {
+                    float: left;
+                    padding-bottom: 0;
+                    padding-top: 18px;
+                    vertical-align: middle;
+                    width: 85%;
+
+                    .md-datepicker-input {
+                        max-width:100%;
+                        width:100%;
+                    }
+                }
+            }
+        }
+
+        .new_request_note {
+            p {
+                font-size: 13px;
+            }
+
+            ul li {
+                font-size: 13px;
+            }
+        }
+    }
+}
