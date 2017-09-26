@@ -1,6 +1,1358 @@
-#page-home md-whiteframe {
-  margin: 25px;
-  height: 100px; 
+html {
+  background: #DDD;
 }
+
+html body {
+  background: #DDD;
+  font-family: 'titilliumregular';
+}
+
+button, html, input, md-bottom-sheet .md-subheader, select, textarea {
+  font-family: 'titilliumregular';
+}
+
+md-toolbar.main-toolbar {
+  background: #01253d url(/img/logobar_back.png) repeat-x;
+}
+
+md-toolbar.main-toolbar img.logobar {
+  width: 395px;
+  height: 90px;
+}
+
+md-toolbar.main-toolbar img.logobar_right {
+  width: 358px;
+  height: 90px;
+  float: right;
+}
+
+md-toolbar.menu-toolbar {
+  background: #FFF;
+  min-height: 30px;
+  border-bottom: 2px dashed #e73761;
+}
+
+md-toolbar.menu-toolbar .md-button {
+  color: #01253d;
+}
+
+md-toolbar.menu-toolbar md-icon, md-toolbar.menu-toolbar .md-input-focused md-icon, md-toolbar.menu-toolbar .md-input-focused .md-input {
+  color: #01253d;
+  border-color: #01253d;
+}
+
+md-toolbar.menu-toolbar md-input-container {
+  padding: 2px;
+  width: 300px;
+  display: inline-block;
+  float: right;
+  margin: 6px 8px;
+}
+
+md-toolbar.menu-toolbar md-input-container input {
+  font-size: 14px;
+  width: 250px;
+}
+
+.md-fill {
+  width: 100%;
+}
+
+a.md-button.md-default-theme.md-primary.md-raised, a.md-button.md-primary.md-raised, a.md-button.md-default-theme.md-primary.md-fab, a.md-button.md-primary.md-fab, .md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary.md-raised, .md-button.md-default-theme.md-primary.md-fab, .md-button.md-primary.md-fab {
+  background-color: #01253d;
+}
+
+a.md-button.md-default-theme.md-primary.md-raised:not([disabled]):hover, a.md-button.md-primary.md-raised:not([disabled]):hover, a.md-button.md-default-theme.md-primary.md-fab:not([disabled]):hover, a.md-button.md-primary.md-fab:not([disabled]):hover, .md-button.md-default-theme.md-primary.md-raised:not([disabled]):hover, .md-button.md-primary.md-raised:not([disabled]):hover, .md-button.md-default-theme.md-primary.md-fab:not([disabled]):hover, .md-button.md-primary.md-fab:not([disabled]):hover {
+  background-color: #01253d;
+}
+
+.ts-titolo {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.ts-titolo h1 {
+  color: #e73761;
+  font-size: 1.6em;
+  margin-bottom: 0;
+}
+
+.ts-titolo h3 {
+  color: #01253d;
+  margin-top: 0;
+  font-size: 0.85em;
+}
+
+.ts-content {
+  background: #FFF;
+  margin-bottom: 30px;
+}
+
+.ts-content md-toolbar {
+  min-height: 48px;
+  height: 48px;
+}
+
+.ts-content md-toolbar .md-button {
+  color: #e73761;
+}
+
+.ts-content md-toolbar .md-button md-icon {
+  fill: #e73761;
+}
+
+.ts-content .md-toolbar-tools .md-button {
+  margin-left: auto;
+}
+
+.ts-content md-toolbar.md-default-theme:not(.md-menu-toolbar), .ts-content md-toolbar:not(.md-menu-toolbar) {
+  background-color: #FFF;
+  color: #e73761;
+}
+
+.ts-content .md-subheader.md-default-theme, .ts-content .md-subheader {
+  color: #01253d;
+}
+
+.ts-content .activity-row {
+  margin: auto;
+}
+
+.ts-content .activity-row .icon {
+  text-align: center;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+}
+
+.ts-content .activity-row .icon md-icon {
+  fill: #e73761;
+}
+
+.ts-content .activity-row .tiny {
+  font-size: small;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.ts-content .badge {
+  font-size: smaller;
+  padding: 4px;
+  border-radius: 5px;
+  color: #FFF;
+  margin-right: 5px;
+}
+
+.ts-content .badge.md-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.ts-content .badge.md-warning {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.ts-content .badge.md-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.ts-content .badge.md-primary {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.ts-content .badgeNew {
+  font-size: smaller;
+  padding: 4px;
+  border-radius: 5px;
+  color: #FFF;
+  margin: auto;
+}
+
+.ts-content .badgeNew.md-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.ts-content .badgeNew.md-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.ts-content md-toolbar.md-warn>md-tabs.md-default-theme, .ts-content md-tabs>md-tabs-wrapper>md-tabs-canvas>md-pagination-wrapper>md-tab-item:not([disabled]).md-active, .ts-content md-toolbar.md-warn>md-tabs.md-default-theme, .ts-content md-tabs>md-tabs-wrapper>md-tabs-canvas>md-pagination-wrapper>md-tab-item:not([disabled]).md-focused {
+  color: #e73761;
+}
+
+.ts-content md-toolbar.md-warn>md-tabs.md-default-theme, .ts-content md-tabs>md-tabs-wrapper>md-tabs-canvas>md-pagination-wrapper>md-tab-item:not([disabled]) {
+  color: #e73761;
+}
+
+.ts-content md-toolbar.md-accent>md-tabs.md-default-theme, .ts-content md-tabs>md-tabs-wrapper>md-tabs-canvas>md-pagination-wrapper>md-ink-bar {
+  color: #01253d;
+  background: #01253d;
+}
+
+.ts-content .layout-padding, .ts-content .layout-padding>.flex, .ts-content .layout-padding>.flex-gt-sm, .ts-content .layout-padding>.flex-lt-lg, .ts-content .layout-padding>.flex-md {
+  padding: 16px;
+}
+
+.ts-content md-input-container.md-default-theme, .ts-content md-input-container label, .ts-content md-input-container.md-default-theme, .ts-content md-input-container .md-placeholder, .ts-content md-input-container.md-default-theme:not(.md-input-invalid).md-input-has-value, .ts-content md-input-container:not(.md-input-invalid).md-input-has-value label, .ts-content md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused, .ts-content md-input-container:not(.md-input-invalid).md-input-focused label {
+  color: #01253d;
+  font-size: 13px;
+}
+
+.ts-content md-input-container.md-default-theme, .ts-content md-input-container .md-input, .ts-content md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused, .ts-content md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+  border-color: #01253d;
+}
+
+.ts-content md-radio-group.md-default-theme[disabled], .ts-content md-radio-group[disabled], .ts-content md-radio-button.md-default-theme[disabled], .ts-content md-radio-button[disabled] {
+  color: #01253d;
+}
+
+.ts-content md-checkbox.md-default-theme[disabled], .ts-content md-checkbox[disabled] .md-label {
+  color: #01253d;
+}
+
+.ts-content .ts-table th {
+  font-weight: 600;
+  font-size: 12px;
+  border-right: 1px solid rgba(0, 0, 0, 0.24);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.ts-content .ts-table td {
+  text-align: center;
+  font-size: 11px;
+  border-right: 1px solid rgba(0, 0, 0, 0.24);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.ts-content .ts-table tr.alternate {
+  background-color: #DDDDDD;
+}
+
+.ts-content .ts-table-bh {
+  display: block;
+  margin-left: auto;
+}
+
+.ts-content .ts-main-content-border {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.ts-side-block-right md-toolbar {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.ts-side-block-right md-list {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.ts-side-block-right md-list>md-list {
+  padding-left: 30px;
+}
+
+md-dialog md-dialog-content {
+  order: none;
+}
+
+.md-pane-open .md-datepicker-calendar {
+  background-color: #FFFFFF;
+}
+
+.md-calendar-selected-date {
+  border: 1px solid #333;
+}
+
+a.md-button.md-default-theme.md-raised[disabled], a.md-button.md-raised[disabled], a.md-button.md-default-theme.md-fab[disabled], a.md-button.md-fab[disabled], .md-button.md-default-theme.md-raised[disabled], .md-button.md-raised[disabled], .md-button.md-default-theme.md-fab[disabled], .md-button.md-fab[disabled] {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.netstatus-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1100;
+  -webkit-perspective: 10000;
+  -moz-perspective: 10000;
+  perspective: 10000;
+  -webkit-perspective: 10000px;
+  -moz-perspective: 10000px;
+  perspective: 10000px;
+  zoom: 1;
+  filter: alpha(opacity=10);
+  -webkit-opacity: 0.1;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.netstatus-overlay-spinner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1101;
+  zoom: 1;
+}
+
+.netstatus-overlay-spinner md-progress-linear {
+  height: 3px;
+}
+
+.netstatus-overlay-spinner md-progress-linear .md-container {
+  background-color: #FFF;
+}
+
+.netstatus-overlay-spinner md-progress-linear .md-bar {
+  background-color: #e73761;
+}
+
+.logged-user {
+  /*background: #01253d url("/img/logobar_right.png") no-repeat scroll left top;*/
+  float: right;
+  font-size: 13px;
+  height: 100px;
+  padding-left: 115px;
+  padding-top: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 358px;
+}
+
+.logged-user a {
+  cursor: pointer;
+}
+
+.validation-errors {
+  color: #aa0000;
+  font-weight: bold;
+  margin: auto;
+  padding: 5px;
+}
+
+.intergrazioni-richieste {
+  padding: 5px;
+}
+
+p.intergrazioni-richieste {
+  margin: 0;
+}
+
+#page-home .project_toolbar .md-button {
+  color: #e73761;
+  font-weight: bold;
+}
+
+#page-home .project_toolbar .md-button md-icon {
+  fill: #e73761;
+}
+
+#page-home md-whiteframe {
+  margin-bottom: 25px;
+}
+
+#page-home md-whiteframe.quick-info {
+  height: 100px;
+}
+
+#page-home md-whiteframe.quick-info .value {
+  font-size: 55px;
+}
+
+#page-home md-whiteframe.quick-info .separator {
+  border: 1px solid #01253d;
+  width: 15%;
+}
+
+#page-home md-whiteframe.quick-info .label {
+  margin-top: 10px;
+}
+
+#page-home .ts-vai-a-pagina {
+  font-size: 14px;
+  max-width: 80px;
+  padding: 0;
+}
+
+#page-user .login-box {
+  background: #fff url("/img/logo.png") no-repeat scroll center 10px/80% auto;
+  border: 2px dashed #e73761;
+  margin-top: 50px;
+  padding-top: 100px;
+}
+
+#page-user .login-box .login-form md-input-container .md-input {
+  border: none;
+}
+
+#page-user .login-box .login-form md-input-container .md-input.ng-invalid.ng-dirty, #page-user .login-box .login-form md-input-container.md-input-focused .md-input {
+  padding-bottom: 1px;
+}
+
+#page-user .login-box .login-form md-input-container {
+  padding: 2px;
+}
+
+#page-user .login-box .login-form md-card md-card-content {
+  padding: 5px;
+}
+
+#page-user .login-box .login-form md-card {
+  md-card: 0 1px 2px 0 #333333;
+}
+
+#page-user .login-box .login-form md-input-container.md-default-theme, #page-user .login-box .login-form md-input-container .md-input {
+  color: #01253d;
+}
+
+#page-user .login-box .loginerror {
+  color: #aa0000;
+  text-align: center;
+}
+
+#page-user .login-box .succesmessage {
+  color: #00AA00;
+  text-align: center;
+}
+
+#page-search .searchresult-count {
+  padding-left: 15px;
+}
+
+#page-search md-list-item.md-2-line .md-list-item-text h3, #page-search md-list-item.md-2-line>.md-no-style .md-list-item-text h3, #page-search md-list-item.md-3-line .md-list-item-text h3, #page-search md-list-item.md-3-line>.md-no-style .md-list-item-text h3 {
+  line-height: 1.3em;
+}
+
+#page-user stato-richiesta .md-button {
+  min-height: 18;
+  min-width: 44px;
+}
+
+#page-user md-tabs md-input-container {
+  padding: 1px 1px 5px;
+}
+
+#page-user md-tabs md-input-container #page-user .login-box .login-form md-input-container .md-input, #page-user md-tabs md-input-container #page-user .login-box .login-form md-input-container.md-default-theme, #page-user md-tabs md-input-container .ts-content md-input-container .md-placeholder, #page-user md-tabs md-input-container .ts-content md-input-container label, #page-user md-tabs md-input-container .ts-content md-input-container.md-default-theme, #page-user md-tabs md-input-container .ts-content md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid), #page-user md-tabs md-input-container .ts-content md-input-container.md-default-theme.md-input-has-value:not(.md-input-invalid), #page-user md-tabs md-input-container .ts-content md-input-container.md-input-focused:not(.md-input-invalid) label, #page-user md-tabs md-input-container .ts-content md-input-container.md-input-has-value:not(.md-input-invalid) label {
+  font-size: 13px;
+}
+
+#page-user md-tabs md-input-container .md-input {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#page-user md-tabs md-input-container .md-input[disabled] {
+  color: #01253d;
+}
+
+#page-user md-tabs md-input-container md-select.md-default-theme, #page-user md-tabs md-input-container md-select .md-select-value.md-select-placeholder {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#page-user md-tabs md-input-container md-select.md-default-theme[disabled], #page-user md-tabs md-input-container md-select[disabled] .md-select-value {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#page-user md-tabs .md-switch-thumb, #page-user md-tabs md-radio-button {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#page-user md-tabs .md-subheader .md-subheader-inner {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+#page-user md-tabs .md-subheader {
+  margin: 16px 16px -16px 0;
+}
+
+#page-user md-tabs md-checkbox {
+  font-size: 14px;
+  margin: 4px;
+}
+
+#page-user md-tabs .md-small {
+  font-size: 11px;
+  line-height: 18px;
+  min-height: 20px;
+  min-width: 44px;
+}
+
+#page-user md-tabs md-datepicker .md-datepicker-button {
+  float: left;
+}
+
+#page-user md-tabs md-datepicker .md-datepicker-input-container {
+  float: left;
+  padding-bottom: 0;
+  padding-top: 18px;
+  vertical-align: middle;
+  width: 85%;
+}
+
+#page-user md-tabs md-datepicker .md-datepicker-input-container .md-datepicker-input {
+  max-width: 100%;
+  width: 100%;
+}
+
+#page-user md-tabs md-autocomplete {
+  min-width: 100px;
+}
+
+#page-user md-tabs .md-datepicker-calendar-pane.md-pane-open {
+  background-color: #FFF;
+}
+
+#page-user .project_toolbar .md-button {
+  color: #e73761;
+  font-weight: bold;
+}
+
+#page-user .project_toolbar .md-button md-icon {
+  fill: #e73761;
+}
+
+#page-user .payments_actions {
+  margin-top: 30px;
+}
+
+#page-stats md-whiteframe {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+#page-stats md-whiteframe.quick-info {
+  height: 100px;
+}
+
+#page-stats md-whiteframe.quick-info .value {
+  font-size: 55px;
+}
+
+#page-stats md-whiteframe.quick-info .separator {
+  border: 1px solid #01253d;
+  width: 15%;
+}
+
+#page-stats md-whiteframe.quick-info .label {
+  margin-top: 10px;
+}
+
+#page-stats md-whiteframe.quick-info-chart {
+  height: 400px;
+}
+
+#page-stats md-whiteframe.quick-info-chart .value {
+  font-size: 55px;
+}
+
+#page-stats md-whiteframe.quick-info-chart .separator {
+  border: 1px solid #01253d;
+  width: 15%;
+}
+
+#page-stats md-whiteframe.quick-info-chart .label {
+  margin-top: 10px;
+}
+
+.ts-public-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.ts-public-info .first_content_introduzione p {
+  margin: 0;
+}
+
+.ts-public-info .first_content_introduzione li {
+  list-style-type: none;
+}
+
+@media all and (-ms-high-contrast: none) {
+  #page-compila {
+    /* IE10 */
+    /* IE11 */
+    /* IE10 */
+    /* IE11 */
+  }
+  #page-compila .ie-margin {
+    margin-top: 3em;
+  }
+  #page-compila *::-ms-backdrop, #page-compila .ie-margin {
+    margin-top: 3em;
+  }
+  #page-compila .ie-double-margin {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  #page-compila *::-ms-backdrop, #page-compila .ie-double-margin {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+#page-compila md-input-container .md-input {
+  -ms-flex-preferred-size: auto !important;
+}
+
+@media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) {
+  #page-compila .ie-margin {
+    margin-top: 3em;
+  }
+  #page-compila .ie-double-margin {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+#page-compila md-input-container.md-input-invalid>label {
+  color: red !important;
+}
+
+#page-compila md-whiteframe .formulario-section md-icon {
+  width: 100%;
+  height: 96px;
+}
+
+#page-compila .ts-public-info form, #page-compila .ts-public-info md-content {
+  width: 100%;
+}
+
+#page-compila md-input-container {
+  padding: 1px 1px 5px;
+}
+
+#page-compila md-input-container #page-user .login-box .login-form md-input-container .md-input, #page-compila md-input-container #page-user .login-box .login-form md-input-container.md-default-theme, #page-compila md-input-container .ts-content md-input-container .md-placeholder, #page-compila md-input-container .ts-content md-input-container label, #page-compila md-input-container .ts-content md-input-container.md-default-theme, #page-compila md-input-container .ts-content md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid), #page-compila md-input-container .ts-content md-input-container.md-default-theme.md-input-has-value:not(.md-input-invalid), #page-compila md-input-container .ts-content md-input-container.md-input-focused:not(.md-input-invalid) label, #page-compila md-input-container .ts-content md-input-container.md-input-has-value:not(.md-input-invalid) label {
+  font-size: 13px;
+}
+
+#page-compila md-input-container .md-input {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#page-compila md-input-container .md-input[disabled] {
+  color: #01253d;
+}
+
+#page-compila md-input-container md-select.md-default-theme, #page-compila md-input-container md-select .md-select-value.md-select-placeholder {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#page-compila md-input-container md-select.md-default-theme[disabled], #page-compila md-input-container md-select[disabled] .md-select-value {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#page-compila .md-switch-thumb, #page-compila md-radio-button {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#page-compila .md-subheader .md-subheader-inner {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+#page-compila .md-subheader {
+  margin: 16px 16px -16px 0;
+}
+
+#page-compila md-checkbox {
+  font-size: 14px;
+  margin: 4px;
+}
+
+#page-compila .md-small {
+  font-size: 11px;
+  line-height: 18px;
+  min-height: 20px;
+  min-width: 44px;
+}
+
+#page-compila md-datepicker .md-datepicker-button {
+  float: left;
+}
+
+#page-compila md-datepicker .md-datepicker-input-container {
+  float: left;
+  padding-bottom: 0;
+  padding-top: 18px;
+  vertical-align: middle;
+  width: 85%;
+}
+
+#page-compila md-datepicker .md-datepicker-input-container .md-datepicker-input {
+  max-width: 100%;
+  width: 100%;
+}
+
+#page-compila md-autocomplete {
+  min-width: 100px;
+}
+
+#page-compila .md-datepicker-calendar-pane.md-pane-open {
+  background-color: #FFF;
+}
+
+#page-compila .delete_esperienza_facoltativa {
+  cursor: pointer;
+  float: right;
+  font-weight: normal;
+}
+
+#page-compila .ts-table {
+  width: 100%;
+}
+
+#page-compila .input-file-controller input {
+  height: 42px;
+  width: 100%;
+  -ms-flex-preferred-size: auto !important;
+}
+
+#page-compila .input-file-controller button {
+  width: 250px;
+}
+
+#page-compila md-content {
+  overflow: hidden;
+}
+
+#page-compila .project_toolbar button {
+  margin: 0;
+}
+
+#page-compila .md-header-curriculum .md-subheader-inner {
+  line-height: 48px;
+}
+
+#page-compila .md-header-curriculum button {
+  float: right;
+}
+
+#page-compila section .curriculum-section-label {
+  display: block;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+#page-compila section button {
+  float: right;
+}
+
+#page-compila md-input-container:not(.md-input-has-value) input:not(:focus), #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field, #page-compila md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field {
+  color: #000;
+}
+
+#page-compila .md-warn {
+  float: right;
+}
+
+#commissione-domanda .stato_acconto {
+  margin-top: 10px;
+}
+
+#commissione-domanda md-input-container.md-input-invalid>label {
+  color: red !important;
+}
+
+#commissione-domanda md-input-container.md-input-invalid>input {
+  border-bottom: 1px solid red !important;
+}
+
+#commissione-domanda .note {
+  border: 2px dashed red;
+}
+
+#commissione-domanda .note textarea {
+  border: none;
+}
+
+#commissione-domanda .note .md-char-counter {
+  color: black;
+}
+
+#commissione-domanda .stato_modifica {
+  color: white;
+  line-height: 0;
+}
+
+#commissione-domanda .md-menu {
+  padding: 0;
+}
+
+#commissione-domanda stato-richiesta .md-button {
+  min-height: 18;
+  min-width: 44px;
+}
+
+#commissione-domanda md-input-container {
+  padding: 1px 1px 5px;
+}
+
+#commissione-domanda md-input-container #page-user .login-box .login-form md-input-container .md-input, #commissione-domanda md-input-container #page-user .login-box .login-form md-input-container.md-default-theme, #commissione-domanda md-input-container .ts-content md-input-container .md-placeholder, #commissione-domanda md-input-container .ts-content md-input-container label, #commissione-domanda md-input-container .ts-content md-input-container.md-default-theme, #commissione-domanda md-input-container .ts-content md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid), #commissione-domanda md-input-container .ts-content md-input-container.md-default-theme.md-input-has-value:not(.md-input-invalid), #commissione-domanda md-input-container .ts-content md-input-container.md-input-focused:not(.md-input-invalid) label, #commissione-domanda md-input-container .ts-content md-input-container.md-input-has-value:not(.md-input-invalid) label {
+  font-size: 13px;
+}
+
+#commissione-domanda md-input-container .md-input {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#commissione-domanda md-input-container .md-input[disabled] {
+  color: #01253d;
+}
+
+#commissione-domanda md-input-container md-select.md-default-theme, #commissione-domanda md-input-container md-select .md-select-value.md-select-placeholder {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#commissione-domanda md-input-container md-select.md-default-theme[disabled], #commissione-domanda md-input-container md-select[disabled] .md-select-value {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#commissione-domanda .md-switch-thumb, #commissione-domanda md-radio-button {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#commissione-domanda md-checkbox {
+  font-size: 14px;
+  margin: 4px;
+}
+
+#commissione-domanda .md-small {
+  font-size: 11px;
+  line-height: 18px;
+  min-height: 20px;
+  min-width: 44px;
+}
+
+#commissione-domanda md-datepicker .md-datepicker-button {
+  float: left;
+}
+
+#commissione-domanda md-datepicker .md-datepicker-input-container {
+  float: left;
+  padding-bottom: 0;
+  padding-top: 18px;
+  vertical-align: middle;
+  width: 85%;
+}
+
+#commissione-domanda md-datepicker .md-datepicker-input-container .md-datepicker-input {
+  max-width: 100%;
+  width: 100%;
+}
+
+#commissione-domanda md-autocomplete {
+  min-width: 100px;
+}
+
+#commissione-domanda .md-datepicker-calendar-pane.md-pane-open {
+  background-color: #FFF;
+}
+
+#commissione-domanda .project_toolbar .md-button {
+  color: #e73761;
+  font-weight: bold;
+}
+
+#commissione-domanda .project_toolbar .md-button md-icon {
+  fill: #e73761;
+}
+
+#commissione-domanda .payments_actions {
+  margin-top: 30px;
+}
+
+#commissione-domanda md-datepicker .md-datepicker-button {
+  float: left;
+}
+
+#commissione-domanda md-datepicker .md-datepicker-input-container {
+  float: left;
+  padding-bottom: 0;
+  padding-top: 18px;
+  vertical-align: middle;
+  width: 85%;
+}
+
+#commissione-domanda md-datepicker .md-datepicker-input-container .md-datepicker-input {
+  max-width: 100%;
+  width: 100%;
+}
+
+#commissione-domanda .md-datepicker-calendar-pane.md-pane-open {
+  background-color: #FFF;
+}
+
+#commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus), #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field, #commissione-domanda md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field {
+  color: #000;
+}
+
+#commissione-domanda h4 {
+  margin-bottom: 0px;
+}
+
+#commissione-domanda .h4_padding {
+  padding-left: 20px;
+}
+
+#commissione-graduatoria {
+  /*.md-subheader .md-subheader-inner {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 16px 0;
+    }
+
+    .md-subheader {
+        margin: 16px 16px -16px 0;
+    }*/
+}
+
+#commissione-graduatoria stato-richiesta .md-button {
+  min-height: 18;
+  min-width: 44px;
+}
+
+#commissione-graduatoria md-input-container {
+  padding: 1px 1px 5px;
+}
+
+#commissione-graduatoria md-input-container #page-user .login-box .login-form md-input-container .md-input, #commissione-graduatoria md-input-container #page-user .login-box .login-form md-input-container.md-default-theme, #commissione-graduatoria md-input-container .ts-content md-input-container .md-placeholder, #commissione-graduatoria md-input-container .ts-content md-input-container label, #commissione-graduatoria md-input-container .ts-content md-input-container.md-default-theme, #commissione-graduatoria md-input-container .ts-content md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid), #commissione-graduatoria md-input-container .ts-content md-input-container.md-default-theme.md-input-has-value:not(.md-input-invalid), #commissione-graduatoria md-input-container .ts-content md-input-container.md-input-focused:not(.md-input-invalid) label, #commissione-graduatoria md-input-container .ts-content md-input-container.md-input-has-value:not(.md-input-invalid) label {
+  font-size: 13px;
+}
+
+#commissione-graduatoria md-input-container .md-input {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#commissione-graduatoria md-input-container .md-input[disabled] {
+  color: #01253d;
+}
+
+#commissione-graduatoria md-input-container md-select.md-default-theme, #commissione-graduatoria md-input-container md-select .md-select-value.md-select-placeholder {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#commissione-graduatoria md-input-container md-select.md-default-theme[disabled], #commissione-graduatoria md-input-container md-select[disabled] .md-select-value {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#commissione-graduatoria .md-switch-thumb, #commissione-graduatoria md-radio-button {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#commissione-graduatoria md-checkbox {
+  font-size: 14px;
+  margin: 4px;
+}
+
+#commissione-graduatoria .md-small {
+  font-size: 11px;
+  line-height: 18px;
+  min-height: 20px;
+  min-width: 44px;
+}
+
+#commissione-graduatoria md-datepicker .md-datepicker-button {
+  float: left;
+}
+
+#commissione-graduatoria md-datepicker .md-datepicker-input-container {
+  float: left;
+  padding-bottom: 0;
+  padding-top: 18px;
+  vertical-align: middle;
+  width: 85%;
+}
+
+#commissione-graduatoria md-datepicker .md-datepicker-input-container .md-datepicker-input {
+  max-width: 100%;
+  width: 100%;
+}
+
+#commissione-graduatoria md-autocomplete {
+  min-width: 100px;
+}
+
+#commissione-graduatoria .md-datepicker-calendar-pane.md-pane-open {
+  background-color: #FFF;
+}
+
+#commissione-graduatoria .project_toolbar .md-button {
+  color: #e73761;
+  font-weight: bold;
+}
+
+#commissione-graduatoria .project_toolbar .md-button md-icon {
+  fill: #e73761;
+}
+
+#commissione-graduatoria .payments_actions {
+  margin-top: 30px;
+}
+
+#commissione-graduatoria md-datepicker .md-datepicker-button {
+  float: left;
+}
+
+#commissione-graduatoria md-datepicker .md-datepicker-input-container {
+  float: left;
+  padding-bottom: 0;
+  padding-top: 18px;
+  vertical-align: middle;
+  width: 85%;
+}
+
+#commissione-graduatoria md-datepicker .md-datepicker-input-container .md-datepicker-input {
+  max-width: 100%;
+  width: 100%;
+}
+
+#commissione-graduatoria .md-datepicker-calendar-pane.md-pane-open {
+  background-color: #FFF;
+}
+
+#commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus), #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field, #commissione-graduatoria md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field {
+  color: #000;
+}
+
+#commissione-graduatoria md-whiteframe {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+#commissione-graduatoria md-whiteframe.quick-info {
+  height: 100px;
+}
+
+#commissione-graduatoria md-whiteframe.quick-info .value {
+  font-size: 27px;
+}
+
+#commissione-graduatoria md-whiteframe.quick-info .separator {
+  border: 1px solid #01253d;
+  width: 15%;
+}
+
+#commissione-graduatoria md-whiteframe.quick-info .label {
+  margin-top: 10px;
+}
+
+#commissione-graduatoria md-whiteframe.quick-info-chart {
+  height: 400px;
+}
+
+#commissione-graduatoria md-whiteframe.quick-info-chart .value {
+  font-size: 27px;
+}
+
+#commissione-graduatoria md-whiteframe.quick-info-chart .separator {
+  border: 1px solid #01253d;
+  width: 15%;
+}
+
+#commissione-graduatoria md-whiteframe.quick-info-chart .label {
+  margin-top: 10px;
+}
+
+#commissione-graduatoria .graduatoria_list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.enlight-restituzione {
+  border: 2px #e73761 dashed;
+  padding: 5px;
+}
+
+#page-profilo md-input-container {
+  padding: 1px 1px 5px;
+}
+
+#page-profilo md-input-container #page-profilo .login-box .login-form md-input-container .md-input, #page-profilo md-input-container #page-profilo .login-box .login-form md-input-container.md-default-theme, #page-profilo md-input-container .ts-content md-input-container .md-placeholder, #page-profilo md-input-container .ts-content md-input-container label, #page-profilo md-input-container .ts-content md-input-container.md-default-theme, #page-profilo md-input-container .ts-content md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid), #page-profilo md-input-container .ts-content md-input-container.md-default-theme.md-input-has-value:not(.md-input-invalid), #page-profilo md-input-container .ts-content md-input-container.md-input-focused:not(.md-input-invalid) label, #page-profilo md-input-container .ts-content md-input-container.md-input-has-value:not(.md-input-invalid) label {
+  font-size: 13px;
+}
+
+#page-profilo md-input-container .md-input {
+  font-size: 14px;
+  line-height: 24px;
+  color: #01253d;
+}
+
+#page-profilo md-input-container .md-input[disabled] {
+  color: #01253d;
+}
+
+#page-profilo md-input-container md-select.md-default-theme, #page-profilo md-input-container md-select .md-select-value.md-select-placeholder {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#page-profilo md-input-container md-select .md-select-value {
+  border-bottom-color: black;
+  color: #01253d;
+}
+
+#page-profilo md-input-container md-select.md-default-theme[disabled], #page-profilo md-input-container md-select[disabled] .md-select-value {
+  font-size: 13px;
+}
+
+#page-profilo .md-input-focused .md-input {
+  border-bottom: 1px solid;
+}
+
+#page-profilo .md-switch-thumb, #page-profilo md-radio-button {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#page-profilo .md-subheader .md-subheader-inner {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+#page-profilo .md-subheader {
+  margin: 16px 16px -16px 0;
+}
+
+#page-profilo md-checkbox {
+  font-size: 14px;
+  margin: 4px;
+}
+
+#page-profilo .md-select-icon {
+  font-size: 14px;
+}
+
+#page-profilo .md-small {
+  font-size: 11px;
+  line-height: 18px;
+  min-height: 20px;
+  min-width: 44px;
+}
+
+#page-profilo md-datepicker .md-datepicker-button {
+  float: left;
+  width: 45px;
+}
+
+#page-profilo md-datepicker .md-datepicker-input-container {
+  float: left;
+  padding-bottom: 0;
+  padding-top: 18px;
+  vertical-align: middle;
+  width: 85%;
+  border: none;
+}
+
+#page-profilo md-datepicker .md-datepicker-input-container .md-datepicker-input {
+  max-width: 100%;
+  width: 100%;
+  color: #01253d;
+}
+
+#page-profilo md-autocomplete {
+  min-width: 100px;
+}
+
+#page-profilo .md-datepicker-calendar-pane.md-pane-open {
+  background-color: #FFF;
+}
+
+#page-profilo .project_toolbar .md-button {
+  color: #e73761;
+  font-weight: bold;
+}
+
+#page-profilo .project_toolbar .md-button md-icon {
+  fill: #e73761;
+}
+
+#page-profilo .payments_actions {
+  margin-top: 30px;
+}
+
+#dialog-nuova-richiesta {
+  min-width: 80%;
+}
+
+#dialog-nuova-richiesta div>md-tabs>md-tabs-wrapper>md-tabs-canvas>md-pagination-wrapper>md-tab-item>span {
+  color: #e73761;
+}
+
+#dialog-nuova-richiesta #subtab md-tabs-wrapper md-tabs-canvas md-pagination-wrapper {
+  width: 99999px !important;
+}
+
+#dialog-nuova-richiesta #subtab md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item span {
+  color: #8C8C8C !important;
+}
+
+#dialog-nuova-richiesta .md-subheader.md-default-theme, #dialog-nuova-richiesta .md-subheader {
+  color: #01253d;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#dialog-nuova-richiesta #content {
+  overflow: inherit;
+}
+
+#dialog-nuova-richiesta .paddingbottom {
+  padding-bottom: 50px;
+}
+
+#dialog-nuova-richiesta stato-richiesta .md-button {
+  min-height: 18;
+  min-width: 44px;
+}
+
+#dialog-nuova-richiesta .ts-table th {
+  font-weight: 600;
+  font-size: 16px;
+  border-right: 1px solid rgba(0, 0, 0, 0.24);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+#dialog-nuova-richiesta .ts-table td {
+  text-align: center;
+  font-size: 16px;
+  border-right: 1px solid rgba(0, 0, 0, 0.24);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+#dialog-nuova-richiesta .ts-table tr.alternate {
+  background-color: #DDDDDD;
+}
+
+#dialog-nuova-richiesta .badge {
+  font-size: smaller;
+  padding: 4px;
+  border-radius: 5px;
+  color: #FFF;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+#dialog-nuova-richiesta .badge.md-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+#dialog-nuova-richiesta .badge.md-warning {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+#dialog-nuova-richiesta .badge.md-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+#dialog-nuova-richiesta .badge.md-primary {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+#dialog-nuova-richiesta md-toolbar {
+  background: #01253d;
+  min-height: 48px;
+}
+
+#dialog-nuova-richiesta md-toolbar .md-toolbar-tools {
+  height: 48px;
+  max-height: 48px;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container {
+  padding: 1px 1px 5px;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container .md-placeholder, #dialog-nuova-richiesta md-dialog-content md-input-container label, #dialog-nuova-richiesta md-dialog-content md-input-container.md-default-theme, #dialog-nuova-richiesta md-dialog-content md-input-container.md-default-theme.md-input-focused:not(.md-input-invalid), #dialog-nuova-richiesta md-dialog-content md-input-container.md-default-theme.md-input-has-value:not(.md-input-invalid), #dialog-nuova-richiesta md-dialog-content md-input-container.md-input-focused:not(.md-input-invalid) label, #dialog-nuova-richiesta md-dialog-content md-input-container.md-input-has-value:not(.md-input-invalid) label {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container md-select.md-default-theme, #dialog-nuova-richiesta md-dialog-content md-input-container md-select .md-select-value.md-select-placeholder {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container md-select.md-default-theme[disabled], #dialog-nuova-richiesta md-dialog-content md-input-container md-select[disabled] .md-select-value {
+  font-size: 13px;
+  color: #01253d;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container .md-input {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container .md-input, #dialog-nuova-richiesta md-dialog-content md-input-container .md-input[disabled] {
+  color: #01253d;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container md-datepicker .md-datepicker-button {
+  float: left;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container md-datepicker .md-datepicker-input-container {
+  float: left;
+  padding-bottom: 0;
+  padding-top: 18px;
+  vertical-align: middle;
+  width: 85%;
+}
+
+#dialog-nuova-richiesta md-dialog-content md-input-container md-datepicker .md-datepicker-input-container .md-datepicker-input {
+  max-width: 100%;
+  width: 100%;
+}
+
+#dialog-nuova-richiesta md-dialog-content .new_request_note p {
+  font-size: 13px;
+}
+
+#dialog-nuova-richiesta md-dialog-content .new_request_note ul li {
+  font-size: 13px;
+}
+
 
 /*# sourceMappingURL=styles.css.map */

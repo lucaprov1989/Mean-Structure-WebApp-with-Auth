@@ -11,10 +11,6 @@ APP.config(['$routeProvider', '$mdDateLocaleProvider',
             templateUrl: 'pages/login.html',
             controller: 'LoginCtrl'
         }).
-        when('/user/:id/:tab?', {
-            templateUrl: 'pages/user.html',
-            controller: 'UserCtrl'
-        }).
         otherwise({
             redirectTo: '/404'
         });
@@ -110,14 +106,17 @@ APP.run(["$rootScope", "$location", '$localStorage', '$sessionStorage', '$mdToas
         };
 
         $rootScope.goTo = function(p) {
-            $location.path(p);
-        };
+            if (p.charAt(0) == "/") {
+                $location.path(p);
+            } else {
+                var url = $location.protocol() + "://" + $location.host();
+                if ($location.port() != 80)
+                    url += ":" + $location.port();
+                url += "/";
+                if (p != "")
+                    url += p + "/";
 
-        $rootScope.search = "";
-        $rootScope.doSearch = function() {
-            //$rootScope.search
-            if ($location.path().indexOf("search") == -1) {
-                $location.path("/search");
+                $window.location.href = url;
             }
         };
 
@@ -172,45 +171,6 @@ APP.controller("TopToolBarCtrl", ['$scope', '$location',
 
 /* FILTRI CUSTOM */
 
-APP.filter('filterAttivita', ['filterWatcher', function(filterWatcher) {
-    return function(array) {
-        if (array === undefined) return [];
-
-        return filterWatcher.isMemoized('filterAttivita', arguments) || filterWatcher.memoize('filterAttivita', arguments, this, _filterAttivita(array));
-
-
-
-    }
-}]);
-
-APP.filter('filterRichiesta', function() {
-    return function(richiesta, outType) {
-
-    }
-});
-
-APP.directive('statoRichiesta', function() {
-    return {
-        restrict: 'E',
-        scope: {
-            richiesta: '='
-        },
-        templateUrl: function(elem, attr) {
-            return 'directive/stato-richiesta/' + attr.tipo + '.html';
-        }
-    };
-});
-
-APP.filter('filterPagamenti', ['filterWatcher', function(filterWatcher) {
-    return function(array) {
-        if (array === undefined) return [];
-
-        return filterWatcher.isMemoized('filterPagamenti', arguments) || filterWatcher.memoize('filterPagamenti', arguments, this, _filterPagamenti(array));
-
-        return arrayOut;
-    }
-
-}]);
 
 APP.directive("uiJqvmap", [
     function() {

@@ -69,8 +69,8 @@ module.exports = function(grunt) {
                 },
                 files: { // Dictionary of files
                     'pages/home.html': 'pages/src/home.html', // 'destination': 'source'
-                    'pages/login.html': 'pages/src/login.html',
-                    'dialogs/richiesta_modifica.html': 'dialogs/src/richiesta_modifica.html'
+                    'pages/login.html': 'pages/src/login.html'
+                    //'dialogs/richiesta_modifica.html': 'dialogs/src/richiesta_modifica.html'
                 }
             }
         }

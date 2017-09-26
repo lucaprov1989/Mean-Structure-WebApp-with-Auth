@@ -4,7 +4,7 @@ APP.config(['$routeProvider', '$mdDateLocaleProvider',
     function($routeProvider, $mdDateLocaleProvider) {
         $routeProvider.
         when('/', {
-            templateUrl: 'gestionale2/pages/index.html',
+            templateUrl: 'landingpage/pages/index.html',
             controller: 'IndexCtrl'
         }).
         otherwise({
@@ -107,13 +107,6 @@ APP.run(["$rootScope", "$location", '$localStorage', '$sessionStorage', '$mdToas
             }
         };
 
-        $rootScope.search = "";
-        $rootScope.doSearch = function() {
-            //$rootScope.search
-            if ($location.path().indexOf("search") == -1) {
-                $location.path("/search");
-            }
-        };
         $rootScope.verifyDate = function(object) {
             for (var attr in object) {
                 var attribute = object[attr];
@@ -162,41 +155,7 @@ APP.controller("TopToolBarCtrl", ['$scope', '$location', '$localStorage', '$sess
 
 /* FILTRI CUSTOM */
 
-APP.filter('filterAttivita', ['filterWatcher', function(filterWatcher) {
-    return function(array) {
-        if (array === undefined) return [];
 
-        return filterWatcher.isMemoized('filterAttivita', arguments) || filterWatcher.memoize('filterAttivita', arguments, this, _filterAttivita(array));
-
-    }
-}]);
-
-APP.filter('filterRichiesta', function() {
-    return function(richiesta, outType) {
-
-    }
-});
-
-APP.directive('statoRichiesta', function() {
-    return {
-        restrict: 'E',
-        scope: {
-            richiesta: '='
-        },
-        templateUrl: function(elem, attr) {
-            return 'directive/stato-richiesta/' + attr.tipo + '.html';
-        }
-    };
-});
-
-APP.filter('filterPagamenti', ['filterWatcher', function(filterWatcher) {
-    return function(array) {
-        if (array === undefined) return [];
-
-        return filterWatcher.isMemoized('filterPagamenti', arguments) || filterWatcher.memoize('filterPagamenti', arguments, this, _filterPagamenti(array));
-
-    }
-}]);
 
 APP.directive("uiJqvmap", [
     function() {

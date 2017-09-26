@@ -15,10 +15,6 @@ APP.run(["$rootScope", "$location", '$localStorage', '$sessionStorage', '$mdToas
 
         $rootScope.auth = function(callBack) {
 
-            if ($location.path().indexOf("search") == -1) {
-                $rootScope.search = "";
-            }
-
             // Check access token
             if ($localStorage.accessToken === null || $localStorage.accessToken === undefined) {
                 $location.path("/login");
@@ -61,13 +57,6 @@ APP.run(["$rootScope", "$location", '$localStorage', '$sessionStorage', '$mdToas
             }
         };
 
-        $rootScope.search = "";
-        $rootScope.doSearch = function() {
-            //$rootScope.search
-            if ($location.path().indexOf("search") == -1) {
-                $location.path("/search");
-            }
-        };
 
         $rootScope.showToast = function(message) {
             $mdToast.show(
@@ -94,44 +83,6 @@ APP.controller("TopToolBarCtrl", ['$scope', '$location',
         };
     }
 ]);
-
-/* FILTRI CUSTOM */
-
-APP.filter('filterAttivita', ['filterWatcher', function(filterWatcher) {
-    return function(array) {
-        if (array === undefined) return [];
-
-        return filterWatcher.isMemoized('filterAttivita', arguments) || filterWatcher.memoize('filterAttivita', arguments, this, _filterAttivita(array));
-
-        return arrayOut;
-    }
-
-}]);
-
-APP.filter('filterRichiesta', function() {
-    return function(richiesta, outType) {}
-});
-
-APP.directive('statoRichiesta', function() {
-    return {
-        restrict: 'E',
-        scope: {
-            richiesta: '='
-        },
-        templateUrl: function(elem, attr) {
-            return 'directive/stato-richiesta/' + attr.tipo + '.html';
-        }
-    };
-});
-
-APP.filter('filterPagamenti', ['filterWatcher', function(filterWatcher) {
-    return function(array) {
-        if (array === undefined) return [];
-
-        return filterWatcher.isMemoized('filterPagamenti', arguments) || filterWatcher.memoize('filterPagamenti', arguments, this, _filterPagamenti(array));
-
-    }
-}]);
 
 APP.directive("uiJqvmap", [
     function() {
