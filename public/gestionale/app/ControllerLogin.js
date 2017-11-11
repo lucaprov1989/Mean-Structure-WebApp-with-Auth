@@ -9,8 +9,10 @@ angular.module('AppControllers')
 
             $scope.login = function() {
                 $scope.loginerror = "";
+                //RestClient Service to process the login, add more cases to manage more errors
                 RestClient.login($scope.user, function(response) {
                     switch (response.error) {
+                      //ok you are logged and directed into home page
                         case 0:
                             $localStorage.accessToken = response.data;
                             $localStorage.accessToken.time = new Date();
@@ -23,6 +25,7 @@ angular.module('AppControllers')
                             break;
 
                         default:
+                        //there must be some error
                             $scope.loginerror = "Accesso errato, verificare i dati inseriti";
                             break;
                     }

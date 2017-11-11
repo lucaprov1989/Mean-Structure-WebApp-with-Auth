@@ -1,3 +1,6 @@
+
+/*Backend Controller for the user actions, more actions need to be implemented*/
+
 var mongoose = require('mongoose');
 var controller_common = require('./common');
 var utente = require('../model/utente');

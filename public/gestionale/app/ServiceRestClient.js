@@ -1,3 +1,5 @@
+/*REST Service*/
+
 angular.module("app.proxy", []).factory("RestClient", ["$http", "config", "$localStorage", "$filter", "$rootScope", "$httpParamSerializer", "$base64",
     function($http, config, $localStorage, $filter, $rootScope, $httpParamSerializer, $base64) {
 
@@ -157,6 +159,7 @@ angular.module("app.proxy", []).factory("RestClient", ["$http", "config", "$loca
         }
 
         return {
+          //Add more actions here
             login: function(user, callBack) {
                 var rp = {
                     grant_type: 'password',

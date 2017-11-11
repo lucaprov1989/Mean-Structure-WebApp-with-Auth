@@ -1,4 +1,6 @@
 
+//function for creation of random token
+
 exports.uid = function(len) {
   var buf = []
     , chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'

@@ -27,7 +27,7 @@ server.deserializeClient(function(id, done) {
 server.exchange(oauth2orize.exchange.password(function(client, username, password, scope, done) {
 
 
-    //Validate the client
+    /*Validate the client*/
     oauth2_client.findOne({_id: client._id}, function(err, localClient) {
         if (err) { return done(err); }
         if(localClient === null) {
@@ -68,12 +68,13 @@ server.exchange(oauth2orize.exchange.password(function(client, username, passwor
             });
             token.save(function(err){
                 if (err) return done(err);
-                // Inserire il refresh token
+                // Inserting the refresh token
                 var refresh = new oauth2_refresh_token({
                     _id: utils.uid(64),
                     expire_time: expire_time,
                     token: token._id
                 });
+                //save the token
                 refresh.save(function(err){
                     if (err) return done(err);
                     done(null, token, refresh._id);

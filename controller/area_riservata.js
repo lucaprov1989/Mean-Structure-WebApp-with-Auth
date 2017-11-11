@@ -1,3 +1,5 @@
+
+/*Controller for the area's actions only for logged users, more actions need to be implemented*/
 var mongoose = require('../config/mongodb');
 var controller_common = require('./common');
 

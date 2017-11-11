@@ -1,14 +1,16 @@
+
+/*More Settings, like SMTP or whatever*/
 module.exports = {
     /*smtpConfig: {
-        host: 'mail.laziodisu.it',
+        host: '',
         secure: true, // use SSL
         tls: {
             rejectUnauthorized: false
         },
         auth: {
-            user: 'ts2015@laziodisu.it',
-            pass: 't0s2015'
+            user: '',
+            pass: ''
         }
     },*/
-    weburl: "192.168.0.226" //da definire
+    weburl: "defineit" //tbd
 }

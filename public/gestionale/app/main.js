@@ -1,5 +1,5 @@
 var APP = angular.module('Gestionale', ['ngRoute', 'ngMaterial', 'ngStorage', 'chart.js', 'templates-webapp', 'app.config', 'app.proxy', 'angularFileUpload', 'AppControllers', 'base64', 'a8m.chunk-by']);
-
+/*rooting and more configs*/
 APP.config(['$routeProvider', '$mdDateLocaleProvider',
     function($routeProvider, $mdDateLocaleProvider) {
         $routeProvider.
@@ -68,7 +68,7 @@ APP.config(['$routeProvider', '$mdDateLocaleProvider',
 
 
 ]);
-
+/*Authentication stuff on run*/
 APP.run(["$rootScope", "$location", '$localStorage', '$sessionStorage', '$mdToast', 'RestClient',
     function($rootScope, $location, $localStorage, $sessionStorage, $mdToast, RestClient) {
 
@@ -160,7 +160,7 @@ APP.run(["$rootScope", "$location", '$localStorage', '$sessionStorage', '$mdToas
         };
     }
 ]);
-
+/*ToolBarController*/
 APP.controller("TopToolBarCtrl", ['$scope', '$location',
     function($scope, $location) {
         $scope.isLogin = function() {
@@ -169,7 +169,7 @@ APP.controller("TopToolBarCtrl", ['$scope', '$location',
     }
 ]);
 
-/* FILTRI CUSTOM */
+/* FILTERS */
 
 
 APP.directive("uiJqvmap", [
